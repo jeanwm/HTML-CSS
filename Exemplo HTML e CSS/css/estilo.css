@@ -1,0 +1,189 @@
+/*Limpa formataçoes padrões 
+    * O asterico significa tudo
+    Estilização da área principal
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 1em equivale a 16px*/
+    font-size: 1em;
+    font-family: "Trebuchet MS", 'Helvetica',  sans-serif;
+    color: #4e4e4e;
+    background: #e6e6e6;
+} 
+
+/*
+    ---Layout---
+*/
+
+
+#area_cabecalho{
+    background-color: #f06d6d;
+    padding: 15px;
+    text-align: center;
+}
+
+#area_logo, #area_menu{
+    padding: 10px;
+}
+
+#area_principal{
+    width: 920px;
+    /*Permite deixar a margem esquerda e direita automática ou seja centralizado*/
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#area_lateral{
+    background: #ff6666;
+}
+
+#area_postagens{
+    width: 660px;
+    float: left;
+}
+
+#area_lateral{
+    width: 240px;
+    float: right;
+}
+
+#area_rodape{
+    clear: both;
+    text-align: center;
+    padding: 15px;
+    background: #ccc;
+}
+
+.postagem{
+    padding: 15px;
+    margin-bottom: 20px;
+    background: white;
+}
+
+.postagem_lateral{
+    font-size: 0.8em;
+    padding: 5px;
+    border-bottom: 1px dotted #ccc;
+
+}
+.conteudo_lateral{
+    background: white;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/*
+    --Formataçoes gerais ----
+*/
+
+h1{
+    color:#4e4e4e;
+    font-size: 2.5em;
+}
+
+h2{
+    color:#21d499;
+}
+
+h3{
+    color:#565656;
+    background: #ccc;
+    padding: 5px;
+}
+.branco{
+    color:white;
+}
+
+.data_postagem{
+    font-size: 0.8em;
+    border-bottom: 1px solid #f4f4f4;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+/*
+    --Formatação do menu---
+*/
+
+a{
+    text-decoration: none;
+}
+
+a:link, a:visited{
+    color: #199c70;  
+}
+
+a:hover{
+   text-decoration: underline;
+}
+
+/*
+    Quando é definido #area-cabecalho a:link e assim por diante quer dizer que somente irá atingir a formatação dos links que pertencem a classe do cabeçalho.
+*/
+
+#area_cabecalho a:link, #area_cabecalho a:visited{
+    color: #fff;
+    padding: 8px 12px;
+}
+
+#area_cabecalho a:hover{
+    color: #21d499;
+    background: #fff;
+    text-decoration: none;
+}
+
+/*
+    Fim da estilização área principal
+*/
+
+/*
+    --- Layout de páginas ---
+*/
+
+#area_principal_especifico{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+#area_postagens_especifico{
+    width: 830px;
+    margin: auto;
+}
+
+.box{
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    width: 200px;
+    height: 350px;
+    padding: 34px;
+    text-align: justify;
+    float: left;
+    background-color: #ffa3a3;
+} 
+
+.box_extra{
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 50px;
+    width: 1149px;
+    height: 60px;
+    padding: 10px;
+    text-align: justify;
+    background-color: #89f1cf;
+    display: inline-block;
+}
+
+.postagem_especifico{
+    padding: 15px;
+    margin-bottom: 20px;
+    background: white;
+}
